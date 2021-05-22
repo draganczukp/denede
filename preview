@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+pgrep -f 'zathura main.pdf' &>/dev/null \
+	|| zathura main.pdf &

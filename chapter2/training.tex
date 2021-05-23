@@ -1,0 +1,45 @@
+\section{Modyfikator Treningu}
+
+Oprócz samej wartości Atrybutu, postaci mogą trenować konkretne Umiejętności.
+Postaci zaczynają z większością Umiejętności na poziomie Niewytrenowanym. W
+zależności od Rasy, Przeszłości i Klasy postaci zaczynają z niektórymi
+Umiejętnościami na poziomie Wytrenowanym, lub nawet Eksperckim.
+
+Dostępne poziomy Treningu to:
+\begin{itemize}
+	\item Niewytrenowany
+	\item Wytrenowany
+	\item Ekspert
+	\item Mistrz
+	\item Legenda
+\end{itemize}
+
+Zwiększenie poziomu Treningu dla Umiejętności jest możliwe poprzez spędzenie
+czasu w grze na trening. Dodatkowo niektóre Zdolności pozwalają na zwiększenie
+poziomu konkretnych Umiejętności lub nauczenie się ich na poziom Wytrenowany.
+
+Tabela~\nameref{tab:skill-dice} pokazuje jakie kostki należy używać przy
+wykonywaniu testów Umiejętności w zależności od wartości odpowiadającego
+atrybutu i poziomu Treningu dla danej Umiejętności.
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}c|ccccc@{}}
+\toprule
+Wartość & Niewytrenowany & Wytrenowany & Ekspert & Mistrz & Legenda \\ \midrule
+1-2     & \multicolumn{5}{c}{-5d4}                                  \\
+3-4     & \multicolumn{5}{c}{-4d4}                                  \\
+5-6     & \multicolumn{5}{c}{-3d4}                                  \\
+7-8     & \multicolumn{5}{c}{-2d4}                                  \\
+9-10    & \multicolumn{5}{c}{-1d4}                                  \\
+11-12   & 0              & 1d4         & 1d6     & 1d8    & 1d10    \\
+13-14   & 1d4            & 1d6         & 1d8     & d12    & 2d8     \\
+15-16   & 2d4            & d12         & 2d10    & 2d12   & 2d20    \\
+17-18   & 3d4            & 2d12        & 4d8     & 2d20   & 4d12    \\
+19-20   & 4d4            & 4d6         & 3d10    & 3d12   & 4d10    \\ \bottomrule
+\end{tabular}%
+}
+\caption{Zestawienie Kości Umiejętności w zależności od wartości Atrybutu i poziomu Treningu w danej Umiejętności}
+\label{tab:skill-dice}
+\end{table}

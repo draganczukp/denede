@@ -77,3 +77,32 @@
 \usepackage{enumitem}
 \setlist{noitemsep}
 
+\newenvironment{boxed}[1]
+{
+  \begin{tcolorbox}[width=\textwidth,colback={gray!15},title={#1}]
+}
+{
+  \end{tcolorbox}
+}
+
+
+\usepackage{etoolbox}
+
+\newenvironment{race}[2]{
+	\section{#1}
+	{\small\itshape
+		\ifstrequal{#2}{h}{Rasa Wyższa}{}
+			\ifstrequal{#2}{l}{Rasa Niższa}{}
+			\ifstrequal{#2}{a}{Rasa Zwierzęca}{}
+	}
+
+}
+{
+}
+
+\newenvironment{trait}[2][]{
+	{\large\bfseries\MakeUppercase #2}\\
+	\ifstrempty{#1}{}{\quad\quad\small Wymagania: \emph{#1}}
+
+}
+{}
